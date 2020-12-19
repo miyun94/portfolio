@@ -5,126 +5,47 @@
 }
 
 body {
-    background-color: #F6EEE0;
-    font-family:  Georgia, Times, 'Times New Roman', serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 header {
-    padding: 10px 10px; 
-    background-color: #D4F1F4; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
-    font-size: 36px;
-    color: #A45C40;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    float: left;
-}
-
-head nav {
-        margin: 7px 0;
-        display: inline;
-}
-
-header nav ul{
+    padding: 0 15px;
+    color: black;
     text-align: center;
-    padding-top: 25px;
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-  }
-
-
-header nav ul li {
-    margin: 0 30px;
-    font-weight: lighter; 
-    font-size: 1.5vw;
-    display: inline;
+    font-size: 4vmax;
 }
 
-header nav ul li a{
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #A45C40;
-    float: right;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 2vmax;
 }
 
 .hero {
-    position: relative;
-    width: 100vm;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./KakaoTalk_20201218_162427081.jpg);
+    background: url(./assets/KakaoTalk_20201218_212554594.jpg);
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    filter: brightness(60%);
+    background-position: center;
+    background-size: 100% auto;
 }
 
-.hero-text {
-    position: relative;
-    color: white;
-}
-
-.top {
-    text-align: center;
-}
-
-.section-title h2 {
-    font-size: 40px;
-    color: #024e76;
-    margin: 35px 0px 5px 15px;
-    border-bottom: 4px solid;
-    border-color: #000000;
-    display: inline-block;
-  }
-
-  .intro p {
-    line-height: 1.5;
-    color: #39a6b2;
-    width: 100%
-    font-size: 20px;
-    margin: auto 0;
-  }
-
-.container-grid {
-    margin: 0px auto;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-area: 10px;
-    grid-auto-flow: dense;
-  }
-
-.grid-item {
+.hero-text h2 {
     display: flex;
     justify-content: center;
-    border: 5px solid rgba(179, 124, 124, 0.2);
-    border-radius: 5px;
-    margin: 5px;
-    font-size: 35px;
-    background-color: aquamarine;
-  }
-
-.run-buddy {
-    grid-column: 1/span 3;
-    grid-row: 1/span 2;
-}
-
-
-.contact ul li a {
-    text-decoration: none;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    font-size: 5vmax;
+    color: white;
 }
