@@ -64,4 +64,52 @@ aside {
     flex: 1;
     display: inline;
     padding-right: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 1px;
+    row-gap: 1px;
+    padding-left: 250px;
+    padding-right: 75px;
+}
+
+.grid-item {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+.run-buddy {
+    background-image: url(./assets/50-hero-section-mock-up.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-row: 1/span 3;
+}
+
+/*.tumblr {
+    background-image: url(./assets/KakaoTalk_20201218_212332399.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: 8 span 1;
+    grid-row: 1 span 2;
+}*/
+
+.contact ul li {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    text-align: center;
 }
