@@ -6,6 +6,7 @@
 
 body {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #D4BFA4;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
 
 header h1 {
     padding: 0 15px;
-    color: black;
+    color: #51483E;
     text-align: center;
     font-size: 4vmax;
 }
@@ -30,10 +31,11 @@ header h1 {
     text-align: right;
     padding-right: 20px;
     font-size: 2vmax;
+    color: #51483E;
 }
 
 .hero {
-    background: url(./assets/KakaoTalk_20201217_085716534.jpg);
+    background: url(./assets/KakaoTalk_20201218_212745862.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,6 +60,7 @@ main {
 .section-title {
     flex: 0 0 250px;
     text-align: center;
+    color: #51483E;
 }
 
 aside {
@@ -66,12 +69,19 @@ aside {
     padding-right: 40px;
     width: 100%;
     height: 100%;
+    color: #51483E;
 }
+
+.grid {
+    background: #ffffff;
+
+}
+
 
 .grid-container {
     display: grid;
-    grid-template-columns: 3fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     column-gap: 1px;
     row-gap: 1px;
     padding-left: 250px;
@@ -80,7 +90,6 @@ aside {
 
 .grid-item {
     font-size: 20px;
-    display: flex;
     justify-content: center;
     background-color: lightblue;
     padding: 20px;
@@ -88,28 +97,53 @@ aside {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 .run-buddy {
     background-image: url(./assets/50-hero-section-mock-up.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    grid-row: 1/span 3;
+    grid-column:1 /span 1 ;
+    grid-row:
 }
 
-/*.tumblr {
-    background-image: url(./assets/KakaoTalk_20201218_212332399.jpg);
-    background-size: cover;
+
+.placeholder {
+    background-image: url(./assets/placeholder-image.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
-    grid-column: 8 span 1;
-    grid-row: 1 span 2;
-}*/
+    text-align: center;
+}
 
 .contact ul li {
     display: inline-block;
     padding-right: 20px;
+    padding-bottom: 50px;
 }
 
 .contact ul li a {
     text-decoration: none;
     text-align: center;
+    color: #51483E;
+}
+
+@media screen and (max-width:700px) {
+    body {
+        background-color: #D4BFA4;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .grid-container {
+        width: 100%;
+    }
+
+    .flex-container {
+        width: 100%;
+    }
 }
