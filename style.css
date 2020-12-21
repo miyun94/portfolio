@@ -115,7 +115,7 @@ a {
 }
 
 .contact ul li {
-    display: inline-block;
+    display:inline-flex;
     padding-right: 20px;
     padding-bottom: 50px;
 }
@@ -126,17 +126,14 @@ a {
     color: #51483E;
 }
 
-@media screen and (max-width:700px) {
+@media (max-width:700px) {
     body {
         background-color: #D4BFA4;
     }
 
-    .wrapper {
-        width: 100%;
-    }
-
     .grid-container {
-        width: 100%;
+        grid-template-areas: 
+        
     }
 
     .flex-container {
