@@ -10,7 +10,5 @@ CSS
 ## Website
 https://miyun94.github.io/portfolio/
 
-![Screenshot of Webiste](assets/screenshot.jpg)
-
 ## Contribution
 Made by Ellen
